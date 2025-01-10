@@ -1,12 +1,15 @@
-import "./App.css";
-import images from "../src/assets/Carroceria-58.jpg"
+import "./styles/global.module.css";
+import { Suspense } from "react";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <>
-      <h1>AUTOLATINO</h1>
-      <img src={images}/>
-    </>
+    <Suspense fallback={<h1> Loading...</h1>}>
+      <ToastContainer />
+      <RouterProvider router={router} />
+    </Suspense>
   );
 }
 

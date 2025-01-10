@@ -1,0 +1,56 @@
+.containerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 166px;
+  background-color: #000;
+}
+
+.containerTextMenu {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+  list-style: none;
+}
+
+.containerTextMenu li {
+  font-family: "Montserrat";
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imageLogo {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+.indicatorActive {
+  border: 1px solid red;
+  width: 100%;
+}
+.indicatorInActive {
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.textActive {
+  color: #ffffff;
+}
+
+.textInaActive {
+  color: #767676;
+}
+
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
+}
