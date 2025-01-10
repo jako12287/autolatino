@@ -11,7 +11,7 @@ const NavBar = () => {
       </div>
       <div className={styles.flex2}>
         <ul className={styles.containerTextMenu}>
-          <Link to={"/"}>
+          <Link to={"/"} className={styles.link}>
             <li
               className={
                 pathname === "/" ? styles.textActive : styles.textInaActive
@@ -27,7 +27,7 @@ const NavBar = () => {
               />
             </li>
           </Link>
-          <Link to={"/about"}>
+          <Link to={"/about"} className={styles.link}>
             <li
               className={
                 pathname === "/about" ? styles.textActive : styles.textInaActive
@@ -43,7 +43,7 @@ const NavBar = () => {
               />
             </li>
           </Link>
-          <Link to={"/advice"}>
+          <Link to={"/advice"} className={styles.link}>
             <li
               className={
                 pathname === "/advice"
@@ -61,7 +61,7 @@ const NavBar = () => {
               />
             </li>
           </Link>
-          <Link to={"/store"}>
+          <Link to={"/store"} className={styles.link}>
             <li
               className={
                 pathname === "/store" ? styles.textActive : styles.textInaActive

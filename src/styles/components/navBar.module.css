@@ -48,6 +48,10 @@
   color: #767676;
 }
 
+.link{
+  text-decoration: none;
+}
+
 .flex1 {
   flex: 1;
 }
