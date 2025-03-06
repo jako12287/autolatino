@@ -8,7 +8,7 @@ import Banner3 from "../../assets/temp/banner3.png";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 1,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -16,7 +16,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 1,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -45,11 +45,12 @@ const CarouselBar = () => {
       infinite={true}
       autoPlay={true}
       autoPlaySpeed={5000}
-      className="h-[550px]"
+      className="max-h-[550px]"
+
     >
       {dataFake.map((el) => (
         <div key={el.id} className="w-full h-full">
-          <img src={el.image} className="max-w-full h-full object-contain" />
+          <img src={el.image} className="max-w-full h-full object-cover" />
         </div>
       ))}
     </Carousel>

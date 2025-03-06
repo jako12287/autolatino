@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
   const {pathname} = useLocation()
   return (
     <main className="flex flex-col items-center justify-center min-h-screen">
-      <div className="w-full max-w-[1400px] mx-auto md:px-0">
-        {pathname === "/" && <Carousel/>}
+      <div className="w-full max-w-[1400px] mx-auto md:px-0 bg-primary">
+      {pathname === "/" && <div className="hidden md:block"><Carousel/></div>}
         <Nav />
         {children}
       </div>
