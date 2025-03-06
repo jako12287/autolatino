@@ -6,14 +6,14 @@ const Nav = () => {
   const itemNav = [
     { name: "INICIO", path: "/" },
     { name: "SOBRE AUTOLATINO", path: "/about" },
-    { name: "ASESORÍA PERSONAL", path: "/personal-advice" },
+    { name: "ASESORIA PERSONAL", path: "/personal-advice" },
     { name: "TIENDA", path: "/store" },
   ];
 
   const { pathname } = useLocation();
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState(pathname); 
+  const [activeTab, setActiveTab] = useState(pathname);
 
   useEffect(() => {
     setActiveTab(pathname);
