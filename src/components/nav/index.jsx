@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LogoAutolatino from "../../assets/images/icons/logo.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Nav = () => {
   const itemNav = [
@@ -9,8 +9,15 @@ const Nav = () => {
     { name: "ASESORÍA PERSONAL", path: "/personal-advice" },
     { name: "TIENDA", path: "/store" },
   ];
+
+  const { pathname } = useLocation();
+
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState(""); // Estado para la pestaña activa
+  const [activeTab, setActiveTab] = useState(pathname); 
+
+  useEffect(() => {
+    setActiveTab(pathname);
+  }, [pathname]);
 
   return (
     <nav className="w-full h-30 flex items-center justify-between px-4 md:px-2 lg:px-35 py-2 bg-primary">
