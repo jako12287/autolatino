@@ -1,6 +1,5 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
 import Banner1 from "../../assets/temp/banner1.png";
 import Banner2 from "../../assets/temp/banner2.png";
 import Banner3 from "../../assets/temp/banner3.png";
@@ -25,7 +24,7 @@ const responsive = {
 };
 
 const CarouselBar = () => {
-  const dataFake = [
+  const datafake = [
     {
       id: 1,
       image: Banner1,
@@ -45,12 +44,11 @@ const CarouselBar = () => {
       infinite={true}
       autoPlay={true}
       autoPlaySpeed={5000}
-      className="max-h-[550px]"
-
+      className="max-h-[500px]"
     >
-      {dataFake.map((el) => (
-        <div key={el.id} className="w-full h-full">
-          <img src={el.image} className="max-w-full h-full object-cover" />
+      {datafake.map((el) => (
+        <div key={el.id}>
+          <img src={el.image} />
         </div>
       ))}
     </Carousel>

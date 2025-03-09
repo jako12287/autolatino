@@ -41,7 +41,7 @@ const Nav = () => {
           menuOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="text-white text-base flex flex-col md:flex-row justify-around md:gap-8 p-4 md:p-0 custom-text-14">
+        <ul className="text-white text-base flex flex-col md:flex-row justify-around md:gap-8 p-4 md:p-0 custom-text-14 cursor-pointer">
           {itemNav.map((item) => (
             <NavLink
               key={item.path}
