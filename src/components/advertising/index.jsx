@@ -1,8 +1,8 @@
 const Advertising = () => {
   return (
-    <div className="bg-white flex justify-center items-center flex-col pt-4 gap-2 ">
+    <div className="py-10 flex justify-center items-center flex-col gap-2 bg-white  ">
       <h6 className="text-customred">-Publicidad-</h6>
-      <div className="rounded-2xl w-[600px] bg-gray-100 h-20"></div>
+      <div className="w-dvw md:max-w-3xl h-20 rounded-2xl bg-gray-100 "></div>
     </div>
   );
 };

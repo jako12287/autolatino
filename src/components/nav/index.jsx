@@ -41,7 +41,7 @@ const Nav = () => {
           menuOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="text-white text-base flex flex-col md:flex-row justify-around md:gap-8 p-4 md:p-0 custom-text-14 cursor-pointer">
+        <ul className="text-white text-base flex flex-col md:flex-row justify-around md:gap-8 p-4 md:p-0 md:text-sm lg:text-base cursor-pointer">
           {itemNav.map((item) => (
             <NavLink
               key={item.path}
@@ -49,9 +49,9 @@ const Nav = () => {
               onClick={() => setActiveTab(item.path)}
               className="relative text-center hover:text-red"
             >
-              <li className="mb-2.5 mt-2 hover:text-customred">{item.name}</li>
+              <li className="mb-2.5 mt-2 hover:text-customred transition-all duration-500 hover:scale-105 inline-block ">{item.name}</li>
               {activeTab === item.path && (
-                <div className="w-full h-[2px] absolute bottom-0 left-0 pt-0.5 rounded-xl bg-customred" />
+                <div className="w-full h-[2px] absolute bottom-0 left-0 pt-0.5 rounded-xl bg-customred " />
               )}
             </NavLink>
           ))}
