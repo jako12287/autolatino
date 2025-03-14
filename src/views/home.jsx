@@ -14,15 +14,17 @@ const dataFake = [
 
 const Home = () => {
   return (
-    <div className="h-full text-primary bg-white">
+    <div className="h-full">
       <Advertising />
       <TopLabel title="Blog" />
       <br />
-      <LongCard
-        header={dataFake[0].header}
-        title={dataFake[0].title}
-        text={dataFake[0].text}
-      />
+      <div className="px-8">
+        <LongCard
+          header={dataFake[0].header}
+          title={dataFake[0].title}
+          text={dataFake[0].text}
+        />
+      </div>
       <br />
       <br />
       <br />

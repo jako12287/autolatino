@@ -28,14 +28,17 @@ const CarouselBar = () => {
     {
       id: 1,
       image: Banner1,
+      alt:"Imeagen de banner"
     },
     {
       id: 2,
       image: Banner2,
+      alt:"Imeagen de banner"
     },
     {
       id: 3,
       image: Banner3,
+      alt:"Imeagen de banner"
     },
   ];
   return (
@@ -48,7 +51,7 @@ const CarouselBar = () => {
     >
       {datafake.map((el) => (
         <div key={el.id}>
-          <img src={el.image} />
+          <img src={el.image} alt={el.alt}/>
         </div>
       ))}
     </Carousel>
