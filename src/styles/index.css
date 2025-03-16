@@ -8,16 +8,18 @@
 
 /*@applay tailwind*/
 
-.title-card {
-  @apply sm:h-[40%] p-3 text-customred text-2xl font-medium;
-}
+@layer components {
+  .title-card {
+    @apply sm:h-[40%] p-3 text-customred text-2xl font-medium;
+  }
 
-.subtitle-card {
-  @apply sm:h-[10%] p-3 text-xl font-bold;
-}
+  .subtitle-card {
+    @apply sm:h-[10%] p-3 text-xl font-bold;
+  }
 
-.description-card {
-  @apply sm:h-[50%] p-3 text-xl font-light;
+  .description-card {
+    @apply sm:h-[50%] p-3 text-xl font-light;
+  }
 }
 
 :root {
