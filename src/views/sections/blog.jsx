@@ -4,7 +4,7 @@ import LongCard from "@/components/longCard"
 
 const BlogSection = ()=>{
     return(
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:p-10 p-2">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:p-10 p-2">
         {dataFake.map(({ id, title, header, text, image }, index) => (
           <div
             key={id}
@@ -19,7 +19,7 @@ const BlogSection = ()=>{
             />
           </div>
         ))}
-      </div>
+      </section>
     )
 }
 export default BlogSection

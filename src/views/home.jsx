@@ -2,6 +2,7 @@ import Advertising from "@/components/advertising";
 import TopLabel from "@/components/topLabel";
 import BlogSection from "./sections/blog";
 import CommunityQuestions from "./sections/communityQuestions";
+import Contact from "./sections/contact";
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       <TopLabel title="Blog" />
       <BlogSection />
       <TopLabel title="Preguntas de la Comunidad" />
-      <CommunityQuestions/>
+      <CommunityQuestions />
+      <Contact />
     </div>
   );
 };

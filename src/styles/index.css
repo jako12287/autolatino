@@ -4,6 +4,7 @@
   --color-primary: #000;
   --color-secondary: #f1f3f1;
   --color-customred: #ff0000;
+  --color-white-50: #ffffff70;
 }
 
 /*@applay tailwind*/
@@ -21,6 +22,34 @@
     @apply sm:h-[50%] p-3 text-xl font-light;
   }
 }
+
+/* Modification of the scroll bar */
+
+@layer utilities {
+  /* Scrollbar completa */
+  .scrollbar::-webkit-scrollbar {
+    width: 8px; /* ancho de la barra vertical */
+    height: 8px; /* alto de la barra horizontal */
+  }
+
+  /* Parte de fondo de la barra */
+  .scrollbar::-webkit-scrollbar-track {
+    background: #000; /* color de fondo */
+  }
+
+  /* La parte que se mueve */
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000; /* color del thumb */
+    border-radius: 10px;
+    border: 2px solid var(--color-customred); /* espacio alrededor */
+  }
+
+  /* Hover del thumb */
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+}
+
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
