@@ -4,7 +4,8 @@
   --color-primary: #000;
   --color-secondary: #f1f3f1;
   --color-customred: #ff0000;
-  --color-white-50: #ffffff70;
+  --color-white-20: #ffffff20;
+  --color-white-50: #ffffff50;
   --color-black-10: #00000010;
 }
 
@@ -50,12 +51,21 @@
     background: #fff;
   }
 
+  .title-view {
+    position: relative;
+    display: inline;
+  }
+  .title-view::after {
+    width: 100%;
+    position: absolute;
+    content: "";
+    border: 2px solid red;
+    border-radius: 1rem;
+    bottom: -5px;
+    left: 0;
 
-  
- 
-  
+  }
 }
-
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

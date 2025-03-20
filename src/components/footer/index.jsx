@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="sm:min-h-[350px] bg-black flex flex-col">
       <div className="flex-2 flex flex-col md:flex-row justify-between p-8">
-        <div className="w-full flex items-center md:border-r-2 border-white-50">
+        <div className="w-full flex items-center md:border-r-2 border-white-20">
           <ul className=" flex flex-col  text-white-50 cursor-pointer">
             {itemNav.map((item) => (
               <NavLink
@@ -36,7 +36,7 @@ const Footer = () => {
             alt="Logo autolatino"
           />
         </div>
-        <div className="w-full flex md:border-l-2 border-white-50 text-white flex-col gap-4 justify-center pl-2 md:pl-10">
+        <div className="w-full flex md:border-l-2 border-white-20 text-white flex-col gap-4 justify-center pl-2 md:pl-10">
           <h3 className="text-customred font-bold">Cantacto:</h3>
           <div>
             <img
