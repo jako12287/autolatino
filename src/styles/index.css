@@ -5,6 +5,7 @@
   --color-secondary: #f1f3f1;
   --color-customred: #ff0000;
   --color-white-50: #ffffff70;
+  --color-black-10: #00000010;
 }
 
 /*@applay tailwind*/
@@ -48,6 +49,11 @@
   .scrollbar::-webkit-scrollbar-thumb:hover {
     background: #fff;
   }
+
+
+  
+ 
+  
 }
 
 

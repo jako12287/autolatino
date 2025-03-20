@@ -3,6 +3,7 @@ import TopLabel from "@/components/topLabel";
 import BlogSection from "./sections/blog";
 import CommunityQuestions from "./sections/communityQuestions";
 import Contact from "./sections/contact";
+import Testimonial from "./sections/testimonials";
 
 const Home = () => {
   return (
@@ -13,6 +14,10 @@ const Home = () => {
       <TopLabel title="Preguntas de la Comunidad" />
       <CommunityQuestions />
       <Contact />
+      <div className="mt-1.5">
+        <TopLabel title="Testimonios" />
+      </div>
+      <Testimonial />
     </div>
   );
 };
