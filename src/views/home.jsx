@@ -23,6 +23,8 @@ const Home = () => {
         <TopLabel title="Videos" />
       </div>
       <Video/>
+      <Advertising />
+
     </div>
   );
 };

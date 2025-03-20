@@ -1,14 +1,10 @@
 import { useState, useEffect } from "react";
 import LogoAutolatino from "../../assets/images/icons/logo.png";
 import { NavLink, useLocation } from "react-router-dom";
+import { itemNav } from "../../utils";
 
 const Nav = () => {
-  const itemNav = [
-    { name: "INICIO", path: "/" },
-    { name: "SOBRE AUTOLATINO", path: "/about" },
-    { name: "ASESORIA PERSONAL", path: "/personal-advice" },
-    { name: "TIENDA", path: "/store" },
-  ];
+  
 
   const { pathname } = useLocation();
 
