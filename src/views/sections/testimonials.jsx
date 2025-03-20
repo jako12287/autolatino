@@ -2,7 +2,7 @@ import CardTestimonial from "../../components/cardTestimonial";
 import { data } from "../../data/dataTestimonial";
 const Testimonial = () => {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-20 mt-10">
       <h3 className="font-medium md:text-2xl text-center">
         Muchos clientes satisfechos ya han encontrado el carro perfecto
         <br />

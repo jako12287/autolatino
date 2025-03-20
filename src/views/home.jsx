@@ -4,6 +4,7 @@ import BlogSection from "./sections/blog";
 import CommunityQuestions from "./sections/communityQuestions";
 import Contact from "./sections/contact";
 import Testimonial from "./sections/testimonials";
+import Video from "./sections/videos";
 
 const Home = () => {
   return (
@@ -18,6 +19,10 @@ const Home = () => {
         <TopLabel title="Testimonios" />
       </div>
       <Testimonial />
+      <div className="mt-10">
+        <TopLabel title="Videos" />
+      </div>
+      <Video/>
     </div>
   );
 };
