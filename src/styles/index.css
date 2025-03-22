@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--color-secondary);
+  text-rendering: optimizeLegibility;
+}
+
 @theme {
   --color-primary: #000;
   --color-secondary: #f1f3f1;
@@ -26,7 +34,30 @@
   }
 
   .item-list {
-   @apply border-2 border-black-50 h-[100px] flex items-center p-4 rounded-2xl shadow-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl
+    @apply border-2 border-black-50 min-w-[300px] md:w-full sm:h-[100px] flex items-center p-4 rounded-2xl shadow-sm hover:scale-105 transition-all duration-500 hover:shadow-2xl;
+  }
+  .input-group {
+    @apply flex flex-col gap-3;
+  }
+  .is-required {
+    @apply flex justify-center items-center text-2xl text-customred;
+  }
+
+  .separate-list {
+    @apply hidden md:inline absolute border-2 border-customred top-[75px] left-[-50px] h-[80px] rounded-2xl;
+  }
+
+  label {
+    @apply font-bold text-xl relative;
+  }
+  input,
+  select,
+  textarea {
+    @apply w-full p-2 border-2 border-black-50 h-9 rounded-md;
+  }
+
+  textarea {
+    @apply resize-none h-70;
   }
 }
 
@@ -68,13 +99,12 @@
     border-radius: 1rem;
     bottom: -5px;
     left: 0;
-
   }
 
-  .list-point{
+  .list-point {
     position: relative;
   }
-  .list-point::after{
+  .list-point::after {
     position: absolute;
     content: " ";
     border: 3px solid red;
@@ -83,7 +113,7 @@
     height: 25px;
     border-radius: 100%;
   }
-  .list-point::before{
+  .list-point::before {
     position: absolute;
     content: " ";
     border: 3px solid red;
@@ -93,21 +123,13 @@
     height: 15px;
     border-radius: 100%;
   }
-
-  .separate-list{
-    position:absolute;
-    border: 2px solid red;
-    top:75px;
-    left: -50px;
-    height: 80px;
-    border-radius: 1rem;
-  }
 }
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background-color: var(--color-secondary);
-  text-rendering: optimizeLegibility;
+@media (max-width: 768px) {
+  .list-point::after {
+    display: none;
+  }
+  .list-point::before {
+    display: none;
+  }
 }

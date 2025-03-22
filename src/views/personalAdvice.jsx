@@ -1,6 +1,7 @@
 import Advertising from "@/components/advertising";
 import FormImage from "@/assets/images/formImage.png";
 import ContactForm from "../components/contactForm";
+import BtnContact from "../components/btnContact";
 const PersonalAdvice = () => {
   return (
     <div className="flex flex-col px-12 md:px-40 font-medium md:gap-8">
@@ -29,7 +30,7 @@ const PersonalAdvice = () => {
           <p>¿Cómo funciona la asesoría?</p>
         </div>
 
-        <div className="px-20">
+        <div className="md:px-20 my-10 md:my-0">
           <div className="flex flex-col gap-8">
             <p className="item-list list-point">
               Escuchamos tus necesidades: Cuéntanos qué estás buscando. Ya sea
@@ -71,14 +72,28 @@ const PersonalAdvice = () => {
           </p>
         </div>
 
-        <div className="flex justify-center p-4 gap-4">
-          <div className="w-1/2">
-            <img src={FormImage} alt="imagen del formulario de contacto" />
+        <div className="flex justify-center gap-4">
+          <div className="hidden lg:flex flex-1 overflow-hidden">
+            <img
+              src={FormImage}
+              alt="imagen del formulario de contacto"
+              className="w-full h-full object-cover rounded-xl"
+            />
           </div>
-          <div className="w-1/2">
-          <ContactForm/></div>
+          <div className="flex-1">
+            <ContactForm />
+          </div>
+        </div>
+
+        <div className="flex justify-center my-8 ">
+          <button className="rounded-4xl  text-white font-bold text-xl max-w-2xs px-6 py-3 cursor-pointer shadow-md shadow-black bg-customred transition-all duration-500 hover:scale-110">
+            Comenzar Asesoría
+          </button>
         </div>
       </>
+      <div>
+        <Advertising />
+      </div>
     </div>
   );
 };

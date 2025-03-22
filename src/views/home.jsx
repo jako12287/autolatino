@@ -22,9 +22,8 @@ const Home = () => {
       <div className="mt-10">
         <TopLabel title="Videos" />
       </div>
-      <Video/>
+      <Video />
       <Advertising />
-
     </div>
   );
 };
