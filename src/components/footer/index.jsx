@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex-2 flex flex-col md:flex-row justify-between p-8">
         <div className="w-full flex items-center md:border-r-2 border-white-20">
           <ul className=" flex flex-col  text-white-50 cursor-pointer">
-            {itemNav.map((item) => (
+            {[...itemNav, { name: "ADMIN", path: "/admin-login" },].map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
@@ -38,13 +38,16 @@ const Footer = () => {
         </div>
         <div className="w-full flex md:border-l-2 border-white-20 text-white flex-col gap-4 justify-center pl-2 md:pl-10">
           <h3 className="text-customred font-bold">Cantacto:</h3>
-          <div>
+          <a href="https://www.youtube.com/@alexdeautolatino"
+          rel="noferer noopener"
+          target="_blank"
+          >
             <img
               src={LogoYoutube}
               className="w-auto object-contain"
               alt="Logo autolatino"
             />
-          </div>
+          </a>
           <span className="flex items-center gap-1">
             <img
               src={Mail}

@@ -86,7 +86,7 @@ const PersonalAdvice = () => {
         </div>
 
         <div className="flex justify-center my-8 ">
-          <button className="rounded-4xl  text-white font-bold text-xl max-w-2xs px-6 py-3 cursor-pointer shadow-md shadow-black bg-customred transition-all duration-500 hover:scale-110">
+          <button className="btn-submit">
             Comenzar Asesoría
           </button>
         </div>

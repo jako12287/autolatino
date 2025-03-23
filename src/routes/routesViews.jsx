@@ -5,6 +5,8 @@ const HomeView = lazy(() => import("../views/home"));
 const AboutView = lazy(() => import("../views/about"));
 const PersonalAdviceView = lazy(() => import("../views/personalAdvice"));
 const StoreView = lazy(() => import("../views/store"));
+/* Admin routes */
+const AdminLogin = lazy(()=> import("../admin/views/login.jsx"))
 
 export const routes = [
   {
@@ -50,6 +52,20 @@ export const routes = [
       <Layout>
         <h1>404</h1>
       </Layout>
+    ),
+  },
+  {
+    id: "admin",
+    path: "/admin-login",
+    element: (
+        <AdminLogin/>
+    ),
+  },
+  {
+    id: "adminHome",
+    path: "/admin-home",
+    element: (
+        <h1>Home del admin</h1>
     ),
   },
 ];
