@@ -31,3 +31,36 @@ export const propostalOption = [
   { id: 8, label: "Sin presupuesto definido", value: "sin_definir" }
 ];
 
+export const optionsMenu = [
+  {
+    id:0,
+    label:"Banner Carrusel",
+    action:"/admin/banners"
+  },
+  {
+    id:1,
+    label:"Blog",
+    action:"/admin/blog"
+  },
+  {
+    id:2,
+    label:"Preguntas",
+    action:"/admin/faq"
+  },
+  {
+    id:3,
+    label:"Testimonios",
+    action:"/admin/testimonials"
+  },
+  {
+    id:4,
+    label:"Tienda",
+    action:"/admin/store"
+  },
+  {
+    id:5,
+    label:"Regresar a la web",
+    action:"/"
+  }
+]
+

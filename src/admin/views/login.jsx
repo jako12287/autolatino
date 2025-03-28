@@ -29,7 +29,7 @@ const AdminLogin = () => {
 
   const onSubmit = async (data) => {
     console.log("TCL: onSubmit -> data", data);
-    navigation("/admin-home")
+    navigation("/admin/banners")
     // try {
     //   const user = await loginUser(data?.user, data?.password);
     //   login(user.user, user.token);
